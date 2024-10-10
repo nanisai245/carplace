@@ -1,0 +1,924 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/* Header part */
+
+
+.first-page{
+    height: 100vh;
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: transparent;
+    position: sticky; 
+    z-index: 100;
+    width: 100%;
+}
+
+.logo-container img{
+    margin-top: 25px;
+    width: 250px;
+    transition: all 0.6s ease;
+    animation: logo 0.7s ease-in;
+}
+
+@keyframes logo {
+    from{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.logo-container h2{
+    text-align: right;
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: relative;
+    left: 65px;
+    top: -12px;
+    color: rgb(243, 232, 212);
+    transform: skewX(-20deg);
+}
+
+/* .logo-container::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background: url("https://image.similarpng.com/very-thumbnail/2020/08/Speed-car-design-on-transparent-background-PNG.png");
+    background-image: linear-gradient(to top, green, orange);
+    background-position: center;
+    top: 50%;
+    background-color: transparent;
+    background-clip: text;
+} */
+
+.solo-letter{
+    font-size: 50px;
+    color: rgba(226, 119, 19, 0.884);
+}
+
+.first-part{
+    position: relative;
+    top: -15px;
+}
+
+.last-part{
+    /* text-decoration: underline; */
+    border-bottom: 2px solid rgb(243, 232, 212);
+    padding-right: 10px;
+}
+
+
+          /* navbar list */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-container{
+    position: relative;
+    top: -13px;
+    left: 10%;
+}
+
+/* .list-container a{
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-right: 30px;
+    color: rgb(233, 214, 179);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.6s ease;
+    padding-bottom: 7px;
+} */
+
+.nav-details{
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-right: 30px;
+    color: rgb(233, 214, 179);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.6s ease;
+    padding-bottom: 7px;
+}
+
+.nav-details-end{
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: rgb(233, 214, 179);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.6s ease;
+    padding-bottom: 7px;
+}
+
+.list-container .effects::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: rgba(226, 119, 19, 0.884);
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+.list-container .effects:hover::after{
+    width: 100%;
+}
+
+          /* search input */
+
+
+/* .header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 40%;
+} */
+
+.search-container{
+    position: relative;
+    top: -13px;
+    border: 2px solid rgb(233, 214, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-right: 10px;
+    background-color: none;
+    /* left: 50px; */
+}
+
+.input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 20px;
+    caret-color: rgb(233, 214, 179);
+    color: white;
+    font-size: 15px;
+}
+
+.search-container a{
+    font-size: 25px;
+    /* color: rgba(226, 119, 19, 0.884); */
+    color: rgba(255, 123, 15, 0.863);
+}
+
+
+           /* menu part */
+
+.menu-container{
+    position: relative;
+    top: -13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-container button{
+    padding: 10px 30px;
+    border: 2px solid rgb(233, 214, 179);
+    background: transparent;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(233, 214, 179);
+    transition: all 0.6s ease;
+}
+
+.menu-container button:hover{
+    border: 2px solid rgba(226, 119, 19, 0.884);
+    color: rgba(226, 119, 19, 0.884);
+    animation: scale 1s ease;
+}
+
+@keyframes scale {
+    0%{
+        transform: scaleX(1);
+    }
+    25%{
+        transform: scaleX(1.5);
+    }
+    50%{
+        transform: scale(0.5, 1.2);
+    }
+    75%{
+        transform: scaleX(1.5);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+.menu-container a{
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(233, 214, 179);
+    transition: all 0.6s ease;
+}
+
+.menu-container a:hover{
+    color: rgba(226, 119, 19, 0.884);
+}
+
+
+          /* 1st page  */
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100%; */
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.589);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-page-content{
+    position: relative;
+    top: 8%;
+}
+
+.main-page-content h1{
+    display: inline-block;
+    font-size: 80px;
+    position: relative;
+    font-weight: bold;
+    color: rgb(233, 214, 179);
+    transition: all 0.6s ease;
+}
+
+.main-page-content h1::before{
+    content: "CART. BUY. RACE.";
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 2px rgba(255, 123, 15, 0.863);
+    z-index: -1;
+}
+
+.main-page-content p{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(228, 210, 178);
+    transition: all 0.6s ease;
+    position: relative;
+    margin-top: 40px;
+}
+
+.main-page-content button{
+    font-weight: 600;
+    background: none;
+    border: 2px solid rgb(233, 214, 179);
+    color: rgb(233, 214, 179);
+    font-size: 25px;
+    padding: 18px 60px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    margin: 3rem 0;
+    letter-spacing: 1px;
+    transition: all 0.6s ease;
+}
+
+.main-page-content button:hover{
+    border: 2px solid rgba(226, 119, 19, 0.884);
+    color: rgba(226, 119, 19, 0.884);
+}
+
+.main-page-content a{
+    display: block;
+    font-size: 50px;
+    color: rgb(233, 214, 179);
+    font-weight: 600;
+    transition: all 0.6s ease;
+    animation: arrow 0.8s ease-out infinite;
+}
+
+@keyframes arrow {
+    from{
+        transform: translateY(50px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+     /* media frames for 1st page */
+
+@media screen and (min-width: 1775px) and (max-width: 1850px){
+    header{
+        padding: 0 20px;
+    }
+
+    .search-container{
+        left: 20px;
+    }
+
+    .list-container{
+        left: 50px;
+    }
+
+}
+
+@media  screen and (min-width: 1577px) and (max-width: 1710px) {
+    header{
+        padding: 0 10px;
+    }
+
+    .list-container{
+        left: 50px;
+    }
+}
+
+@media  screen and (min-width: 1273px) and (max-width: 1576px) {
+    header{
+        padding: 0 20px;
+    }
+
+    .list-container{
+        left: 50px;
+    }
+
+    .search-container{
+        border: none;
+        text-align: center;
+        width: 50px;
+        order: 2;
+    }
+
+    .search-container a{
+        font-size: 35px;
+    }
+
+    .input{
+        display: none;
+    }
+
+    .menu-container{
+        order: 1;
+        gap: 30px;
+        left: 40px;
+    }
+
+}
+
+@media screen and (min-width: 997px) and (max-width: 1272px) {
+    header{
+        padding: 0 5px;
+    }
+
+    .list-container{
+        display: none;
+    }
+
+    .search-container{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 996px){
+    header{
+        padding: 0 10px;
+    }
+
+    .list-container{
+        display: none;
+    }
+
+    .search-container{
+        border: none;
+        text-align: center;
+        width: 50px;
+        left: 20%;
+        display: none;
+    }
+
+    .input{
+        display: none;
+    }
+
+    .search-container a{
+        font-size: 40px;
+    }
+
+    .menu-container{
+        gap: 40px;
+    }
+
+    .logo-container img{
+        width: 200px;
+    }
+
+    .logo-container h2{
+        left: 10px;
+    }
+
+    .menu-container button{
+        display: none;
+    }
+
+    /* .main-page-content h1{
+        font-size: 40px;
+    }
+
+    .main-page-content p{
+        font-size: 20px;
+    }
+
+    .main-page-content button{
+        font-size: 20px;
+    } */
+}
+
+
+@media screen and (max-width: 550px){
+    header{
+        padding: 0 10px;
+    }
+
+    .list-container{
+        display: none;
+    }
+
+    .search-container{
+        border: none;
+        text-align: center;
+        width: 50px;
+        left: 20%;
+        display: none;
+    }
+
+    .input{
+        display: none;
+    }
+
+    .search-container a{
+        font-size: 40px;
+    }
+
+    .menu-container{
+        gap: 40px;
+    }
+
+    .logo-container img{
+        width: 200px;
+    }
+
+    .logo-container h2{
+        left: 10px;
+    }
+
+    .menu-container button{
+        display: none;
+    }
+
+    .main-page-content h1{
+        font-size: 40px;
+    }
+
+    .main-page-content p{
+        font-size: 20px;
+    }
+
+    .main-page-content button{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 760px){
+    header{
+        padding: 0 10px;
+    }
+
+    .list-container{
+        display: none;
+    }
+
+    .search-container{
+        border: none;
+        text-align: center;
+        width: 50px;
+        left: 20%;
+        display: none;
+    }
+
+    .input{
+        display: none;
+    }
+
+    .search-container a{
+        font-size: 40px;
+    }
+
+    .menu-container{
+        gap: 40px;
+    }
+
+    .logo-container img{
+        width: 200px;
+    }
+
+    .logo-container h2{
+        left: 10px;
+    }
+
+    .menu-container button{
+        display: none;
+    }
+
+    .main-page-content h1{
+        font-size: 50px;
+    }
+
+    .main-page-content p{
+        font-size: 15px;
+    }
+
+    .main-page-content button{
+        font-size: 20px;
+    }
+}
+
+
+     /* FIRST PAGE COMPLETE */
+
+
+.second-page{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background: linear-gradient(to right, rgb(233, 214, 179), rgb(233, 214, 179)); */
+    backdrop-filter: blur(32px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.second-page h1{
+    color: rgb(233, 214, 179);
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid rgb(233, 214, 179);
+}
+
+.selling{
+    color: rgba(226, 119, 19, 0.884);
+}
+
+
+.main-container{
+    height: 60%;
+    width: 50%;
+    position: relative;
+    left: 10%;    
+}
+
+.item{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    transform-origin: 50% 100%;
+    transform: perspective(600px) rotateX(15deg);
+    opacity: 0.8;
+    box-shadow: 8px 5px 15px black;
+}
+
+.item:hover{
+    transform: perspective(500px) rotateX(0deg);
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+.item-1{
+    background-image: url('https://smgmedia.blob.core.windows.net/images/113814/1024/audi-r8-coupe-99ec87fb1056.jpg');
+    background-size: cover;
+    background-position: top;
+    /* margin-top: 270px; */
+    margin-left: 490px;
+} 
+
+.item-2{
+    background-image: url('https://jlr.scene7.com/is/image/jlr/L55124GL_303101952_016');
+    background-position: center;
+    background-size: cover;
+    /* margin-top: 240px; */
+    margin-left: 420px;
+}
+
+.item-3{
+    background-image: url("https://ev-database.org/img/auto/Porsche_Taycan_Turbo_GT_2024/Porsche_Taycan_Turbo_GT_2024-01.jpg");
+    background-position: center;
+    background-size: cover;
+    /* margin-top: 210px; */
+    margin-left: 350px;
+}
+
+.item-4{
+    background-image: url("https://img.etimg.com/photo/msid-74472356,imgsize-623888/%E2%80%8BSomeofitssafetyfeaturesincludedriverandfrontpassengerairbags%2Canti-lockbrakingsystemandhillstartassist..jpg");
+    background-position: center;
+    background-size: cover;
+    /* margin-top: 170px; */
+    margin-left: 280px;
+}
+
+.item-5{
+    background-image: url("https://www.usnews.com/object/image/00000190-dbe7-de43-abbf-fff745830000/01-2024-mercedes-benz-gls-angular-front-jms.JPG?update-time=1721676896152&size=responsive640");
+    background-position: center;
+    background-size: cover;
+    /* margin-top: 130px; */
+    margin-left: 210px;
+}
+
+.item-6{
+    background-image: url("https://bmw.scene7.com/is/image/BMW/bmw-x-series-overview-x5-g05?wid=3000&hei=3000");
+    background-position: center;
+    background-size: cover;
+    /* margin-top: 90px; */
+    margin-left: 140px;
+}
+
+.item-7{
+    background-image: url("https://news.dupontregistry.com/wp-content/uploads/2023/01/ferrari_roma-13.jpg");
+    background-position: center;
+    background-size: cover;
+    /* margin-top: 50px; */
+    margin-left: 70px;
+
+}
+
+.item-8{
+    background-image: url("https://spn-sta.spinny.com/blog/20220228135341/Mahindra-Thar-header.jpg?compress=true&quality=80&w=576&dpr=2.6");
+    background-position: center;
+    background-size: cover;
+    /* margin-top: 0; */
+    margin-left: 0;
+}
+
+@media  screen and (min-width: 1047px) and (max-width: 1313px) {
+    .main-container{
+        width: 40%;
+        height: 50%;
+    }
+}
+
+
+
+     /* footer section */
+
+footer{
+    background-color: black;
+    height: 150px;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media{
+    text-align: center;
+    color: rgba(240, 166, 106, 0.726);
+}
+
+.social-media h2{
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 400px;
+}
+.footer-text a{
+    color: rgb(243, 232, 212);
+    position: relative;
+}
+
+.footer-text a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: rgba(226, 119, 19, 0.884);
+    bottom: -3px;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.footer-text a:hover::after{
+    width: 100%;
+}
+
+.footer-text span{
+    margin-right: 8px;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.logo-font{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.copyright-section{
+    text-align: center;
+}
+
+.copyright-section span{
+    font-size: 20px;
+}
+
+.contact-container{
+    text-align: center;
+}
+
+.contact-container h2{
+    color: rgba(240, 166, 106, 0.726);
+    font-size: 20px;
+    position: relative;
+}
+
+.contact-container p{
+    color: rgba(243, 232, 212);
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+@media  screen and (min-width: 1047px) and (max-width: 1313px) {
+    .main-container{
+        width: 500px;
+        height: 320px;
+        left: -10px;
+    }
+}
+
+@media screen and (max-width: 1046px){
+    .item-1{
+        margin-top: 270px;
+        margin-left: 0;
+    }
+    .item-2{
+        margin-left: 0;
+        margin-top: 240px;
+    }
+    .item-3{
+        margin-left: 0;
+        margin-top: 210px;
+    }
+    .item-4{
+        margin-left: 0;
+        margin-top: 170px;
+    }
+    .item-5{
+        margin-left: 0;
+        margin-top: 130px;
+    }
+    .item-6{
+        margin-left: 0;
+        margin-top: 90px;
+    }
+    .item-7{
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .item-8{
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .main-container{
+        position: relative;
+        top: -230px;
+        width: 640px;
+        height: 320px;
+    }
+
+    .item{
+        transform: perspective(500px) rotateX(50deg);
+        opacity: 0.7;
+    }
+
+    .footer-text{
+        gap: 5px;
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 810px){
+    .main-container{
+        width: 500px;
+        height: 300px;
+    }
+
+    .footer-text{
+        gap: 0;
+    }
+
+    .social-media h2{
+        top: -5px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .social-media h2{
+        font-size: 13px;
+    }
+
+    .footer-text a{
+        font-size: 10px;
+    }
+
+    .footer-text{
+        gap: 5px;
+        width: 200px;
+    }
+
+    .copyright-section{
+        font-size: 13px !important;
+    }
+
+    .contact-container h2{
+        font-size: 13px;
+    }
+
+    .contact-container p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .main-container{
+        width: 400px;
+        left: 0;
+    }
+}
